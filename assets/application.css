@@ -1,0 +1,411 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+*/
+/* _mixin.scss */
+/* _reset.scss */
+/* line 3, ../../app/assets/stylesheets/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+/* line 12, ../../app/assets/stylesheets/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 15, ../../app/assets/stylesheets/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 18, ../../app/assets/stylesheets/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../../app/assets/stylesheets/_main.scss */
+::selection {
+  background: black;
+  color: white;
+}
+
+/* line 6, ../../app/assets/stylesheets/_main.scss */
+body, h1, h2, ul, li, div, a, p {
+  color: #666666;
+  font-family: Futura, 'Helvetica Neue', sans;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 12, ../../app/assets/stylesheets/_main.scss */
+p {
+  font-size: 14pt;
+}
+
+/* line 16, ../../app/assets/stylesheets/_main.scss */
+a:link, a:visited, a {
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  -k-transition: background 0.2s;
+  transition: background 0.2s;
+  background-color: rgba(51, 51, 51, 0);
+  text-decoration: none;
+  line-height: 2em;
+}
+/* line 21, ../../app/assets/stylesheets/_main.scss */
+a:link:hover, a:visited:hover, a:hover {
+  background-color: rgba(56, 56, 56, 0.2);
+}
+
+/* line 26, ../../app/assets/stylesheets/_main.scss */
+header {
+  background: #333333;
+  margin: 90pt auto 0;
+  padding: 0 0 10pt 0;
+  text-align: center;
+  width: 100%;
+}
+/* line 33, ../../app/assets/stylesheets/_main.scss */
+header h1 {
+  -webkit-text-shadow: inset 1px 2px 4px #333333 1px 1px black;
+  -moz-text-shadow: inset 1px 2px 4px #333333 1px 1px black;
+  -o-text-shadow: inset 1px 2px 4px #333333 1px 1px black;
+  -k-text-shadow: inset 1px 2px 4px #333333 1px 1px black;
+  text-shadow: inset 1px 2px 4px #333333 1px 1px black;
+  color: #fafafa;
+  font-weight: 100;
+  line-height: 160%;
+  letter-spacing: -0.17em;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+/* line 44, ../../app/assets/stylesheets/_main.scss */
+header h1 span.word {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  opacity: 0.8;
+}
+
+/* line 51, ../../app/assets/stylesheets/_main.scss */
+#stuff {
+  margin: 0 auto 3em;
+  max-width: 1000px;
+  _width: 1000px;
+  #width: 1000px;
+}
+/* line 57, ../../app/assets/stylesheets/_main.scss */
+#stuff footer {
+  margin: 2em 0 0 0;
+  padding: 0;
+}
+/* line 61, ../../app/assets/stylesheets/_main.scss */
+#stuff footer h2 {
+  font-size: 30pt;
+  letter-spacing: .1em;
+  margin: 0;
+}
+/* line 67, ../../app/assets/stylesheets/_main.scss */
+#stuff footer div {
+  -webkit-box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.2);
+  -k-box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2;
+  float: left;
+  margin: 0em 3.5%;
+  padding: 0em 0 1.3em 0;
+  text-align: center;
+  vertical-align: top;
+  width: 26%;
+}
+/* line 77, ../../app/assets/stylesheets/_main.scss */
+#stuff footer div ul li {
+  margin: 0.5em 0 0 0;
+}
+/* line 80, ../../app/assets/stylesheets/_main.scss */
+#stuff footer div ul li a {
+  cursor: pointer;
+  display: block;
+  margin: .3em auto;
+  overflow-x: hidden;
+  padding: .1em 2%;
+  width: 100%;
+}
+
+/* line 5, ../../app/assets/stylesheets/_resume_partial.scss */
+body.resume {
+  background-image: none !important;
+}
+/* line 8, ../../app/assets/stylesheets/_resume_partial.scss */
+body.resume header h1 {
+  color: white;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 16, ../../app/assets/stylesheets/_resume_partial.scss */
+body.resume header #details p, body.resume header #details a {
+  color: white;
+  text-align: center;
+}
+/* line 22, ../../app/assets/stylesheets/_resume_partial.scss */
+body.resume section {
+  line-height: 2em;
+  width: 98%;
+  margin: 12pt auto;
+}
+/* line 26, ../../app/assets/stylesheets/_resume_partial.scss */
+body.resume section a {
+  border-bottom: 2px solid #f5ebd6;
+}
+/* line 28, ../../app/assets/stylesheets/_resume_partial.scss */
+body.resume section a:hover {
+  color: #666666;
+  background-color: #f5ebd6;
+}
+/* line 33, ../../app/assets/stylesheets/_resume_partial.scss */
+body.resume section h2 {
+  font-size: 24pt;
+  float: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 9px;
+}
+/* line 40, ../../app/assets/stylesheets/_resume_partial.scss */
+body.resume section .content {
+  padding-top: 10pt;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 13pt;
+  margin-bottom: 2em;
+}
+/* line 47, ../../app/assets/stylesheets/_resume_partial.scss */
+body.resume section .content .details ul {
+  margin-left: 12pt;
+}
+/* line 51, ../../app/assets/stylesheets/_resume_partial.scss */
+body.resume section .content .job {
+  margin-bottom: 12pt;
+}
+/* line 55, ../../app/assets/stylesheets/_resume_partial.scss */
+body.resume section .content hgroup h3 {
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 800px) {
+  /* line 65, ../../app/assets/stylesheets/_resume_partial.scss */
+  body.resume section {
+    max-width: 1000px;
+  }
+  /* line 67, ../../app/assets/stylesheets/_resume_partial.scss */
+  body.resume section h2 {
+    font-size: 24pt;
+    float: left;
+    text-align: left;
+    width: 20%;
+  }
+  /* line 73, ../../app/assets/stylesheets/_resume_partial.scss */
+  body.resume section .content {
+    width: 80%;
+    margin-left: 20%;
+    padding-left: 12pt;
+  }
+}
+@media screen and (min-width: 500px) {
+  /* line 84, ../../app/assets/stylesheets/_resume_partial.scss */
+  body.resume .content {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 9999px) {
+  /* line 2, ../../app/assets/stylesheets/_monitors.scss */
+  header h1 {
+    font-size: 102px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  /* line 6, ../../app/assets/stylesheets/_monitors.scss */
+  header h1 {
+    font-size: 94px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* line 10, ../../app/assets/stylesheets/_monitors.scss */
+  header h1 {
+    font-size: 86px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  /* line 14, ../../app/assets/stylesheets/_monitors.scss */
+  header h1 {
+    font-size: 78px;
+  }
+
+  /* line 15, ../../app/assets/stylesheets/_monitors.scss */
+  #stuff footer h2 {
+    font-size: 26pt;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 19, ../../app/assets/stylesheets/_monitors.scss */
+  header h1 {
+    font-size: 70px;
+  }
+
+  /* line 20, ../../app/assets/stylesheets/_monitors.scss */
+  #stuff footer h2 {
+    font-size: 23pt;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 24, ../../app/assets/stylesheets/_monitors.scss */
+  header h1 {
+    font-size: 62px;
+  }
+
+  /* line 25, ../../app/assets/stylesheets/_monitors.scss */
+  #stuff footer h2 {
+    font-size: 21pt;
+  }
+}
+/* _ipad.scss */
+@media screen and (max-width: 800px) {
+  /* line 4, ../../app/assets/stylesheets/_ipad.scss */
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* line 8, ../../app/assets/stylesheets/_ipad.scss */
+  header {
+    margin: 0 0 1em 0;
+    padding: 1em 0em 1em 0em;
+    text-align: left;
+  }
+  /* line 12, ../../app/assets/stylesheets/_ipad.scss */
+  header h1 {
+    font-size: 106px;
+    white-space: normal;
+    text-align: left;
+    overflow-x: hidden;
+    margin: 0em 0 0em 0;
+    padding: 0.3em 0% 0.4em 5%;
+    line-height: 0.9;
+    letter-spacing: -.18em;
+  }
+  /* line 21, ../../app/assets/stylesheets/_ipad.scss */
+  header h1 span.word {
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+  }
+  /* line 25, ../../app/assets/stylesheets/_ipad.scss */
+  header h1 span.word span {
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    -k-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+
+  /* line 33, ../../app/assets/stylesheets/_ipad.scss */
+  #stuff footer h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+  }
+  /* line 38, ../../app/assets/stylesheets/_ipad.scss */
+  #stuff footer div {
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: left;
+    width: 100%;
+    margin: 2em auto;
+  }
+  /* line 45, ../../app/assets/stylesheets/_ipad.scss */
+  #stuff footer div ul li {
+    font-size: 1.3em;
+    margin: 0;
+  }
+  /* line 48, ../../app/assets/stylesheets/_ipad.scss */
+  #stuff footer div ul li a {
+    width: 100%;
+    margin: .3em 0%;
+    padding: 0.2em 4px;
+  }
+}
+/* _iphone.scss*/
+@media screen and (max-width: 700px) {
+  /* line 4, ../../app/assets/stylesheets/_iphone.scss */
+  header h1 {
+    font-size: 98px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 8, ../../app/assets/stylesheets/_iphone.scss */
+  header h1 {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 12, ../../app/assets/stylesheets/_iphone.scss */
+  header h1 {
+    font-size: 65px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 17, ../../app/assets/stylesheets/_iphone.scss */
+  header h1 {
+    font-size: 58px;
+  }
+
+  /* line 24, ../../app/assets/stylesheets/_iphone.scss */
+  #stuff footer div {
+    padding-left: 6%;
+    padding-right: 6%;
+    overflow-x: hidden;
+    margin-bottom: 2em;
+  }
+  /* line 30, ../../app/assets/stylesheets/_iphone.scss */
+  #stuff footer div ul li {
+    font-size: 1.1em;
+    margin: 0;
+  }
+  /* line 33, ../../app/assets/stylesheets/_iphone.scss */
+  #stuff footer div ul li a {
+    padding: 0.4em 2%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  /* line 41, ../../app/assets/stylesheets/_iphone.scss */
+  #stuff footer h2 {
+    font-size: 2em;
+  }
+}
