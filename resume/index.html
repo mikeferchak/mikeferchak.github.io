@@ -10,7 +10,11 @@
   <meta content='Mike Ferchak' name='author'>
   <title>The place for everything Mike Ferchak-y</title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'>
-  <link href="/assets/application.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
 </head>
 <body class='resume'>
   <header>
@@ -26,7 +30,7 @@
         <a href="mailto:mikeferchak+jobs@gmail.com">mikeferchak@gmail.com</a>
       </p>
       <p>
-        <a href="http://mferchak.com">mferchak.com</a>
+        <a href="http://mikeferchak.github.io/resume">mikeferchak.github.io/resume</a>
       </p>
     </div>
   </header>
@@ -35,8 +39,8 @@
       Skills
     </h2>
     <div class='content'>
-      CSS, XSLT, JavaScript, jQuery, Ruby on Rails, HTML5, SASS, ERB, HAML, Git
-    </div>
+      <p>CSS, XSLT, JavaScript, jQuery, Ruby on Rails, SASS, html5 canvas</p>
+      <p class="small">Lesser skills: Objective C, Swift, Unreal Engine 4, Blender </p>
   </section>
   <section id='experience'>
     <h2>
@@ -46,64 +50,56 @@
       <div class='job'>
         <hgroup>
           <h3>IBM</h3>
-          <h4>Software Developer</h4>
-          <h5>09 / 2012 - Present</h5>
+          <h4>Software Developer - Watson group</h4>
+          <h5 class="date">09 / 2012 - Present</h5>
         </hgroup>
         <div class='details'>
-          <p>Front end development for big data dashboard application (Infosphere Data Explorer Application Builder)</p>
-          <span class='moreinfo'>Technologies used: JRuby, Ruby on Rails, jQuery, SASS, ERB, Git</span>
+          <p>Front end development for enterprise search application platform (Watson Explorer).</p>
+          <p>Recently, in charge of demoing integration with Watson developer cloud services.</p>
+          <p class='moreinfo'>Technologies used: JRuby, Ruby on Rails, jQuery, SASS, Git, D3</p>
+          <p class="moreinfo noprint">
+            <a href="https://www.youtube.com/watch?v=xepQvU4zYcc">Demo video</a>
+          </p>
         </div>
       </div>
       <div class='job'>
         <hgroup>
           <h3>Vivisimo</h3>
           <h4>Applications Engineer</h4>
-          <h5>08 / 2011 - 09 / 2012</h5>
+          <h5 class="date">08 / 2011 - 09 / 2012</h5>
         </hgroup>
         <div class='details'>
           <p>Designing custom search applications for big, impressive companies.</p>
-          <p>Recent big, impressive projects include:</p>
-          <ul>
-            <li>Boston Consulting Group - Complete UI overhaul</li>
-            <li>Proctor and Gamble - Updated search interface</li>
-            <li>American College of Cardiology - Implemented new focused refinements and document preview</li>
-            <li>Lowe’s - Full implementation</li>
-          </ul>
-          <p>Less impressive side projects include:</p>
-          <ul>
-            <li>Reimplementing the default front-end display in Rails</li>
-            <li>Designing a code dependency search tool (also in Rails)</li>
-          </ul>
-          <span class='moreinfo'>Technologies used: XSLT, Javascript - (YUI and jQuery), CSS - (SASS), Ruby on Rails, HAML, ERB, Git</span>
+          <span class='moreinfo'>Technologies: XSLT, Javascript - (YUI and jQuery), CSS - (SASS), Ruby on Rails, HAML, ERB, Git</span>
         </div>
       </div>
+      <div class="job">
+        <hgroup>
+          <h3>Vivisimo</h3>
+          <h4>Support Engineer</h4>
+          <h5 class="date">06/2009 - 08/2011</h5>
+        </hgroup>
+        <div class='details'>
+          <p>Gained intermediate/advanced knowledge of XSLT, regular expressions, header/cookie manipulation, and the search federation process in general.</p>
+        </div>
+      </div>
+
       <div class='job'>
         <hgroup>
           <h3>Mike Ferchak’s Incredible Web Design Company</h3>
           <h4>Freelance Web Designer</h4>
-          <h5>2005 - Present</h5>
+          <h5 class="date">2005 - Present</h5>
         </hgroup>
         <div class='details'>
-          <p>Most recent project: The Commonplace Coffee Company - commonplacecoffee.com</p>
+          <p>Most recent project: The Commonplace Coffee Company</p>
           <span class='moreinfo'>The goal for this project was to deliver a valid, lightweight, responsive redesign that was more in line with the company’s design aesthetic.</span>
-        </div>
-      </div>
-      <div class='job'>
-        <hgroup>
-          <h3>Vivisimo</h3>
-          <h4>Support Engineer</h4>
-          <h5>06/2009 - 08/2011</h5>
-        </hgroup>
-        <div class='details'>
-          <p>Gained intermediate/advanced knowledge of XSLT, the Velocity ‘parse’ node, regular expressions, header/cookie manipulation, and the search federation process in general.</p>
-          <p>Useful knowledge gained regarding display dependencies and minimizing display/project code redundancy.</p>
         </div>
       </div>
       <div class='job'>
         <hgroup>
           <h3>University of Pittsburgh - Department of Physics and Astronomy</h3>
           <h4>Web developer</h4>
-          <h5>09/2007 - 04/2009</h5>
+          <h5 class="date">09/2007 - 04/2009</h5>
         </hgroup>
         <div class='details'>
           <ul>
@@ -116,6 +112,34 @@
       </div>
     </div>
   </section>
+
+  <section id='side_projects'>
+    <h2>
+      Side projects
+    </h2>
+    <div class='content'>
+      <ul>
+        <li>
+          <a href="https://www.dropbox.com/s/qzi0783be6mleul/Pitt%2520Race%2520South%2520Track%2520in%2520Assetto%2520Corsa.mp4?dl=0">
+          PittRace track simulation (Assetto Corsa + Oculus Rift)</a>
+        </li>
+        <li>
+          <a href="https://www.dropbox.com/sh/08avsnj1ednwvs9/AADtoifPvxZ6uE8aoQIFG-hda?dl=0">
+          Down (iOS app for communicating whether or not you are down)</a>
+        </li>
+        <li>
+          <a href="http://mikeferchak.github.io/canvas_test/">
+            Multidimensional physical data visualization</a>
+        </li>
+        <li>
+          <a href="https://www.dropbox.com/sh/cuiqgwef2cp3iks/AACUDbOLrvK_FzveKXVCDD0pa?dl=0">
+            Procedural music visualization in VR (UE4 + Oculus Rift)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <section id='education'>
     <h2>
       Education
@@ -125,29 +149,27 @@
         <hgroup>
           <h3>University of Pittsburgh</h3>
           <h4>Information Science</h4>
-          <h5>2007 - 2010</h5>
+          <h5 class="date">2007 - 2010</h5>
         </hgroup>
       </div>
       <div class='school'>
         <hgroup>
           <h3>Penn State University</h3>
           <h4>Information Science</h4>
-          <h5>2005 - 2007</h5>
+          <h5 class="date">2005 - 2007</h5>
         </hgroup>
-        <p class='moreinfo'>Enterprise Systems Integration Club, Japanese Culture Society</p>
       </div>
     </div>
   </section>
+
   <section id='interests'>
     <h2>
       Interests
     </h2>
     <div class='content'>
-      <a href="http://www.alistapart.com/articles/responsive-web-design/">Responsive web design</a>
-      , drop-shadows, typography,
-      <a href="http://commonplacecoffee.com">espresso</a>
-      ,
-      <a href="http://scrsolo.com">autocross</a>
+      <a href="https://www.youtube.com/watch?v=eG4q-kG2HXA">Motorcycle racing</a>,
+      <a href="https://www.youtube.com/watch?v=CyyfZCVuGXE">autocross</a>,
+      virtual reality, autonomous transportation, programatically making things fly around
     </div>
   </section>
   <!-- <section id='associations'>
@@ -159,7 +181,5 @@
     </div>
   </section> -->
 </body>
-<script src="/assets/jquery.min.js?body=1" type="text/javascript"></script>
+
 <script src="/assets/modernizr.js?body=1" type="text/javascript"></script>
-<script src="/assets/awesome_shadows.js?body=1" type="text/javascript"></script>
-<script src="/assets/application.js?body=1" type="text/javascript"></script>

@@ -1,0 +1,98 @@
+::selection {
+  background: black;
+  color: white;
+}
+
+body, h1, h2, ul, li, div, a, p {
+  color: $main-text;
+  font-family: 'Futura', 'Helvetica Neue', sans;
+  @include box-sizing(border-box);
+}
+
+p {
+  font-size: 14pt;
+}
+
+a:link, a:visited, a {
+  @include transition(background .2s);
+  background-color:hsla(0, 0%, 20%, 0);
+  text-decoration:none;
+  line-height: 2em;
+  &:hover {
+    background-color:hsla(0, 0%, 22%, 0.2);
+  }
+}
+
+header {
+  background: hsl(0,0%,20%);
+  margin: 90pt auto 0;
+  padding: 0 0 10pt 0;
+  text-align:center;
+  width:100%;
+
+  h1  {
+    @include textshadow(1px 2px 4px hsl(0,0%,20%));
+    color: hsl(0,0%,98%);
+    font-weight: 100;
+    line-height:160%;
+    margin:0 auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: center;
+    white-space: nowrap;
+    span.word {
+      @include inline-block;
+      opacity:0.8;
+    }
+  }
+}
+
+#stuff {
+  margin:0 auto 3em;
+  max-width: $page-width;
+  _width: $page-width;
+  #width: $page-width;
+
+  footer {
+    margin:2em 0 0 0;
+    padding:0;
+
+    h2 {
+      font-size: 30pt;
+      letter-spacing: .1em;
+      margin: 0;
+    }
+
+    div {
+      @include shadow;
+      background-color: hsl(0, 0%, 95%);
+      float: left;
+      margin: 0em 3.5%;
+      padding: 0em 0 1.3em 0;
+      text-align:center;
+      vertical-align:top;
+      width: 26%;
+
+      ul li {
+        margin:0.5em 0 0 0;
+
+        a {
+          cursor:pointer;
+          display: block;
+          margin: .3em auto;
+          overflow-x:hidden;
+          padding: .1em 2%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.details p {
+  font-size: 0.9em;
+}
+
+.small {
+  font-size: 0.8em;
+}

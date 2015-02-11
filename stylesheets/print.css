@@ -1,0 +1,309 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* _mixin.scss */
+/* _reset.scss */
+/* line 3, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+/* line 12, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 15, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 18, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../sass/_main.scss */
+::selection {
+  background: black;
+  color: white;
+}
+
+/* line 6, ../sass/_main.scss */
+body, h1, h2, ul, li, div, a, p {
+  color: #000000;
+  font-family: 'Futura', 'Helvetica Neue', sans;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 12, ../sass/_main.scss */
+p {
+  font-size: 14pt;
+}
+
+/* line 16, ../sass/_main.scss */
+a:link, a:visited, a {
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  -k-transition: background 0.2s;
+  transition: background 0.2s;
+  background-color: rgba(51, 51, 51, 0);
+  text-decoration: none;
+  line-height: 2em;
+}
+/* line 21, ../sass/_main.scss */
+a:link:hover, a:visited:hover, a:hover {
+  background-color: rgba(56, 56, 56, 0.2);
+}
+
+/* line 26, ../sass/_main.scss */
+header {
+  background: #333333;
+  margin: 90pt auto 0;
+  padding: 0 0 10pt 0;
+  text-align: center;
+  width: 100%;
+}
+/* line 33, ../sass/_main.scss */
+header h1 {
+  -webkit-text-shadow: inset 1px 2px 4px #333333 1px 1px black;
+  -moz-text-shadow: inset 1px 2px 4px #333333 1px 1px black;
+  -o-text-shadow: inset 1px 2px 4px #333333 1px 1px black;
+  -k-text-shadow: inset 1px 2px 4px #333333 1px 1px black;
+  text-shadow: inset 1px 2px 4px #333333 1px 1px black;
+  color: #fafafa;
+  font-weight: 100;
+  line-height: 160%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+/* line 43, ../sass/_main.scss */
+header h1 span.word {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  opacity: 0.8;
+}
+
+/* line 50, ../sass/_main.scss */
+#stuff {
+  margin: 0 auto 3em;
+  max-width: 1000px;
+  _width: 1000px;
+  #width: 1000px;
+}
+/* line 56, ../sass/_main.scss */
+#stuff footer {
+  margin: 2em 0 0 0;
+  padding: 0;
+}
+/* line 60, ../sass/_main.scss */
+#stuff footer h2 {
+  font-size: 30pt;
+  letter-spacing: .1em;
+  margin: 0;
+}
+/* line 66, ../sass/_main.scss */
+#stuff footer div {
+  -webkit-box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.2);
+  -k-box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2;
+  float: left;
+  margin: 0em 3.5%;
+  padding: 0em 0 1.3em 0;
+  text-align: center;
+  vertical-align: top;
+  width: 26%;
+}
+/* line 76, ../sass/_main.scss */
+#stuff footer div ul li {
+  margin: 0.5em 0 0 0;
+}
+/* line 79, ../sass/_main.scss */
+#stuff footer div ul li a {
+  cursor: pointer;
+  display: block;
+  margin: .3em auto;
+  overflow-x: hidden;
+  padding: .1em 2%;
+  width: 100%;
+}
+
+/* line 92, ../sass/_main.scss */
+.details p {
+  font-size: 0.9em;
+}
+
+/* line 96, ../sass/_main.scss */
+.small {
+  font-size: 0.8em;
+}
+
+/* line 5, ../sass/_resume_partial.scss */
+body.resume {
+  background-image: none !important;
+}
+/* line 8, ../sass/_resume_partial.scss */
+body.resume header h1 {
+  color: white;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 16, ../sass/_resume_partial.scss */
+body.resume header #details p, body.resume header #details a {
+  color: white;
+  text-align: center;
+}
+/* line 22, ../sass/_resume_partial.scss */
+body.resume section {
+  line-height: 2em;
+  width: 98%;
+  margin: 12pt auto;
+}
+/* line 26, ../sass/_resume_partial.scss */
+body.resume section a {
+  border-bottom: 2px solid #f5ebd6;
+}
+/* line 28, ../sass/_resume_partial.scss */
+body.resume section a:hover {
+  color: #000000;
+  background-color: #f5ebd6;
+}
+/* line 33, ../sass/_resume_partial.scss */
+body.resume section h2 {
+  font-size: 24pt;
+  float: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 9px;
+}
+/* line 40, ../sass/_resume_partial.scss */
+body.resume section .date {
+  font-size: 0.8em;
+}
+/* line 44, ../sass/_resume_partial.scss */
+body.resume section .moreinfo {
+  font-size: 0.9em;
+}
+/* line 47, ../sass/_resume_partial.scss */
+body.resume section .content {
+  padding-top: 10pt;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 13pt;
+  margin-bottom: 2em;
+}
+/* line 54, ../sass/_resume_partial.scss */
+body.resume section .content .details ul {
+  font-size: 0.9em;
+  margin-left: 12pt;
+}
+/* line 58, ../sass/_resume_partial.scss */
+body.resume section .content .details ul li {
+  list-style-type: circle;
+}
+/* line 63, ../sass/_resume_partial.scss */
+body.resume section .content .job {
+  margin-bottom: 24pt;
+}
+/* line 67, ../sass/_resume_partial.scss */
+body.resume section .content hgroup h3 {
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 800px) {
+  /* line 77, ../sass/_resume_partial.scss */
+  body.resume section {
+    max-width: 1000px;
+  }
+  /* line 79, ../sass/_resume_partial.scss */
+  body.resume section h2 {
+    font-size: 24pt;
+    float: left;
+    text-align: left;
+    width: 20%;
+  }
+  /* line 85, ../sass/_resume_partial.scss */
+  body.resume section .content {
+    width: 80%;
+    margin-left: 20%;
+    padding-left: 12pt;
+  }
+}
+@media screen and (min-width: 500px) {
+  /* line 96, ../sass/_resume_partial.scss */
+  body.resume .content {
+    font-size: 11pt;
+  }
+}
+/* line 15, ../sass/print.scss */
+body.resume {
+  font-size: 11pt;
+}
+/* line 17, ../sass/print.scss */
+body.resume p.moreinfo, body.resume p, body.resume .details p {
+  font-size: 11pt !important;
+}
+/* line 21, ../sass/print.scss */
+body.resume header {
+  background-color: white !important;
+  margin: 5pt auto 0  !important;
+  padding: 0 0 10pt 0  !important;
+  text-align: center  !important;
+  width: 100%  !important;
+}
+/* line 27, ../sass/print.scss */
+body.resume header h1 {
+  font-size: 3em;
+  color: #666666 !important;
+  letter-spacing: 0em  !important;
+  text-align: center  !important;
+  padding-left: 0  !important;
+  padding-right: 0  !important;
+}
+/* line 38, ../sass/print.scss */
+body.resume #details p a {
+  color: #666666 !important;
+}
+/* line 43, ../sass/print.scss */
+body.resume section {
+  font-size: 11pt;
+}
+/* line 45, ../sass/print.scss */
+body.resume section h2 {
+  font-size: 20pt;
+  float: left;
+  text-align: left;
+  width: 20%;
+}
+/* line 51, ../sass/print.scss */
+body.resume section .content {
+  width: 80%;
+  margin-left: 20%;
+  padding-left: 12pt;
+  font-size: 11pt;
+}
+/* line 57, ../sass/print.scss */
+body.resume section .content hgroup h3 {
+  font-size: 12pt;
+}
