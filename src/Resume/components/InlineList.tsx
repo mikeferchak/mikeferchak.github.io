@@ -1,18 +1,15 @@
 import classnames from "classnames";
-import { Component } from "react";
 import styles from "./InlineList.module.css";
 
 export interface InlineListProps {
   className?: string;
+  children: React.ReactNode;
 }
 
-export class InlineList extends Component<InlineListProps> {
-  render() {
-    const { className, children } = this.props;
-    return (
-      <ul className={classnames(styles["inline-list"], className)}>
-        {children}
-      </ul>
-    );
-  }
+function InlineList({ className, children }: InlineListProps) {
+  return (
+    <ul className={classnames(styles["inline-list"], className)}>{children}</ul>
+  );
 }
+
+export default InlineList;
