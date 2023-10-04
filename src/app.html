@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<style>
+			:root {
+				--background-color: #fff;
+				--primary-color: #4d4d4d;
+				--secondary-color: grey;
+				--accent-color: #e6e6e6;
+				--space-xs: 0.7rem;
+				--space-xxs: 0.35rem;
+				--space-sm: 2.4rem;
+				--space-md: 4rem;
+				--font-sm: 0.7rem;
+				--font-md: 1rem;
+				--font-lg: 1.5rem;
+				--font-xl: 2.6rem;
+			}
+
+			html {
+				background: var(--background-color);
+				font-size: 17px;
+			}
+
+			body {
+				background: var(--background-color);
+				color: var(--primary-color);
+				font-size: var(--font-md);
+				font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+					Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+			}
+
+			a {
+				transition: color 0.3s;
+				color: var(--secondary-color);
+			}
+
+			a:hover {
+				color: var(--primary-color);
+			}
+
+			h1,
+			h2,
+			h3 {
+				padding: 0;
+				margin: 0 0 var(--space-xs) 0;
+				vertical-align: center;
+			}
+
+			h1 {
+				font-size: var(--font-xl);
+			}
+
+			h3 {
+				font-size: var(--font-md);
+			}
+
+			p {
+				line-height: calc(var(--font-md) * 1.4);
+				margin: 0 0 var(--space-xs) 0;
+			}
+
+			::selection {
+				background: var(--accent-color);
+			}
+
+			@media screen and (max-width: 600px) {
+				.resume {
+					padding: var(--space-md) var(--space-xs);
+				}
+			}
+
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--background-color: hsl(0, 0%, 15%);
+					--primary-color: hsl(0, 0%, 80%);
+					--secondary-color: hsl(0, 0%, 60%);
+					--accent-color: hsl(0, 0%, 65%);
+				}
+			}
+
+			@media print {
+				:root {
+					--background-color: #ffffff;
+					--primary-color: hsl(0, 0%, 0%);
+					--secondary-color: hsl(0, 0%, 30%);
+				}
+
+				html {
+					font-size: 9.4px;
+				}
+
+				a {
+					text-decoration: none;
+				}
+
+				a[target='_blank']::after {
+					display: none;
+				}
+
+				.hide-print {
+					display: none !important;
+				}
+
+				.resume {
+					padding: 4rem 4rem 0 4rem;
+					max-width: 100%;
+				}
+			}
+		</style>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
