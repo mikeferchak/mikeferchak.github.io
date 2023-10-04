@@ -1,1 +1,155 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"/><meta name="theme-color" content="#262626" media="(prefers-color-scheme: dark)"/><meta name="description" content="Web site created using create-react-app"/><link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="manifest" href="/manifest.json"/><title>Mike Ferchak - Resume</title><script defer="defer" src="/static/js/main.b6b5b7ee.js"></script><link href="/static/css/main.4cf0f9c8.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<style>
+			:root {
+				--background-color: #fff;
+				--primary-color: #4d4d4d;
+				--secondary-color: grey;
+				--accent-color: #e6e6e6;
+				--space-xs: 0.7rem;
+				--space-xxs: 0.35rem;
+				--space-sm: 2.4rem;
+				--space-md: 4rem;
+				--font-sm: 0.7rem;
+				--font-md: 1rem;
+				--font-lg: 1.5rem;
+				--font-xl: 2.6rem;
+			}
+
+			html {
+				background: var(--background-color);
+				font-size: 17px;
+			}
+
+			body {
+				background: var(--background-color);
+				color: var(--primary-color);
+				font-size: var(--font-md);
+				font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+					Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+			}
+
+			a {
+				transition: color 0.3s;
+				color: var(--secondary-color);
+			}
+
+			a:hover {
+				color: var(--primary-color);
+			}
+
+			h1,
+			h2,
+			h3 {
+				padding: 0;
+				margin: 0 0 var(--space-xs) 0;
+				vertical-align: center;
+			}
+
+			h1 {
+				font-size: var(--font-xl);
+			}
+
+			h3 {
+				font-size: var(--font-md);
+			}
+
+			p {
+				line-height: calc(var(--font-md) * 1.4);
+				margin: 0 0 var(--space-xs) 0;
+			}
+
+			::selection {
+				background: var(--accent-color);
+			}
+
+			@media screen and (max-width: 600px) {
+				.resume {
+					padding: var(--space-md) var(--space-xs);
+				}
+			}
+
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--background-color: hsl(0, 0%, 15%);
+					--primary-color: hsl(0, 0%, 80%);
+					--secondary-color: hsl(0, 0%, 60%);
+					--accent-color: hsl(0, 0%, 65%);
+				}
+			}
+
+			@media print {
+				:root {
+					--background-color: #ffffff;
+					--primary-color: hsl(0, 0%, 0%);
+					--secondary-color: hsl(0, 0%, 30%);
+				}
+
+				html {
+					font-size: 9.4px;
+				}
+
+				a {
+					text-decoration: none;
+				}
+
+				a[target='_blank']::after {
+					display: none;
+				}
+
+				.hide-print {
+					display: none !important;
+				}
+
+				.resume {
+					padding: 4rem 4rem 0 4rem;
+					max-width: 100%;
+				}
+			}
+		</style>
+		
+		<link href="./_app/immutable/assets/2.9e3b0217.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.af6f0b2e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.62d8904c.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.85cba91d.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.4d4e91b4.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.e899f476.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.96e0ee3e.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.baea2ddc.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="content svelte-ombpc1"><header class="svelte-8pt3hz"><h1 data-svelte-h="svelte-43u0qw">Mike Ferchak</h1> <ul class=" svelte-14p8wvm"><li><a href="mailto:mikeferchak@gmail.com">mikeferchak@gmail.com</a></li> <li><a href="https://github.com/mikeferchak" class=" svelte-tjgg88" target="_blank" rel="noreferrer">github.com/mikeferchak</a></li> </ul> </header> <section class="svelte-1l5ng8w"><h2 class="svelte-1l5ng8w">Skills</h2> <section class="svelte-1kwnrla"><h3>Languages</h3> <ul class=" svelte-14p8wvm"><li data-svelte-h="svelte-wit3y1">TypeScript / JavaScript</li> <li data-svelte-h="svelte-3og7zh">HTML</li> <li data-svelte-h="svelte-4tjubz">CSS</li> <li data-svelte-h="svelte-16hhsrm">Python</li> <li data-svelte-h="svelte-1an6u8b">Swift</li> <li data-svelte-h="svelte-sr3yny">Go</li> <li data-svelte-h="svelte-1tfbgsv">C++</li> <li data-svelte-h="svelte-1qtzn5i">C#</li> </ul> </section> <section class="svelte-1kwnrla"><h3>Frameworks and tools</h3> <ul class=" svelte-14p8wvm"><li data-svelte-h="svelte-1qcxobn">React</li> <li data-svelte-h="svelte-ou7mdz">Redux / Redux toolkit</li> <li data-svelte-h="svelte-n06vu4">next.js</li> <li data-svelte-h="svelte-13sjkfr">svelte / sveltekit</li> <li data-svelte-h="svelte-qpf3fx">SwiftUI</li> <li data-svelte-h="svelte-i5gu5e">Mobx</li> <li data-svelte-h="svelte-1hhid52">Sass</li> <li data-svelte-h="svelte-f3jl52">Ros</li> <li data-svelte-h="svelte-15tbhlt">WebRTC</li> <li data-svelte-h="svelte-839j3l">WebGL</li> <li data-svelte-h="svelte-15mf2m1">Three.js</li> <li data-svelte-h="svelte-sxjp5n">Unreal Engine</li> <li data-svelte-h="svelte-cp6pbl">Unity</li> <li data-svelte-h="svelte-tkq4lp">Rails</li> <li data-svelte-h="svelte-15hmrf6">Git</li> </ul> </section> </section> <section class="svelte-1l5ng8w"><h2 class="svelte-1l5ng8w">Experience</h2> <section class="svelte-1kwnrla"><h3><span class="title svelte-xst17k">Senior Software Engineer</span> <span data-svelte-h="svelte-19z2dav">–</span> <span class="company svelte-xst17k">IAM Robotics</span> <span class="date svelte-xst17k">(2022 - 2023)</span> </h3> <p>Developed a fleet management front-end for warehouse robots</p> <ul class=" svelte-14p8wvm"><li>Typescript</li><li>React</li><li>Redux</li><li>Redux toolkit</li><li>Jest</li><li>Cypress</li> </ul>  </section> <section class="svelte-1kwnrla"><h3><span class="title svelte-xst17k">Software Engineer</span> <span data-svelte-h="svelte-19z2dav">–</span> <span class="company svelte-xst17k">Formant</span> <span class="date svelte-xst17k">(2019 - 2021)</span> </h3> <p>Developed a low-latency teleoperation interface using WebRTC</p> <ul class=" svelte-14p8wvm"><li>Typescript</li><li>React</li><li>Mobx</li><li>Sass</li><li>WebRTC</li><li>Three.JS</li><li>MapBox</li><li>WebGL</li><li>Node</li><li>Ros</li><li>Go</li><li>GStreamer</li> </ul> <div class="extra svelte-xst17k"><ul class="hidePrint svelte-14p8wvm"><li><a href="https://www.youtube.com/watch?v=7nmavYUhC5I" class="hide-print svelte-tjgg88" target="_blank" rel="noreferrer">Walk with Spot Demo</a></li> <li><a href="http://cnet.com/news/i-walked-the-boston-dynamics-spot-robot-dog-remotely-and-only-crashed-once-formant/" class="hide-print svelte-tjgg88" target="_blank" rel="noreferrer">CNet article</a></li> </ul></div> </section> <section class="svelte-1kwnrla"><h3><span class="title svelte-xst17k">Co-Founder &amp; Chief Designer</span> <span data-svelte-h="svelte-19z2dav">–</span> <span class="company svelte-xst17k">Formation Robotics</span> <span class="date svelte-xst17k">(2017 - 2019)</span> </h3> <p>Designed and built the frontend for our universal fleet operation platform</p> <ul class=" svelte-14p8wvm"><li>Unreal Engine</li><li>ROS2</li> </ul> <div class="extra svelte-xst17k"><ul class="hidePrint svelte-14p8wvm"><li><a href="https://www.youtube.com/watch?v=EdAJyepgdA8" class="hide-print svelte-tjgg88" target="_blank" rel="noreferrer">Delivery Demo</a></li> <li><a href="https://www.youtube.com/watch?v=o38hD0c63jQ" class="hide-print svelte-tjgg88" target="_blank" rel="noreferrer">Feature overview</a></li> </ul></div> </section> <section class="svelte-1kwnrla"><h3><span class="title svelte-xst17k">Level Designer</span> <span data-svelte-h="svelte-19z2dav">–</span> <span class="company svelte-xst17k">Psytec Games</span> <span class="date svelte-xst17k">(2017 - 2018)</span> </h3> <p>World building for Windlands 2 - a VR grappling hook adventure game</p> <ul class=" svelte-14p8wvm"><li>Unity</li><li>Blender</li> </ul> <div class="extra svelte-xst17k"><ul class="hidePrint svelte-14p8wvm"><li><a href="https://www.youtube.com/watch?v=BSeIn9q1jT4" class="hide-print svelte-tjgg88" target="_blank" rel="noreferrer">Windlands Trailer</a></li> <li><a href="https://store.steampowered.com/app/458580/Windlands_2/" class="hide-print svelte-tjgg88" target="_blank" rel="noreferrer">Steam Store</a></li> </ul></div> </section> <section class="svelte-1kwnrla"><h3><span class="title svelte-xst17k">Front End Software Developer</span> <span data-svelte-h="svelte-19z2dav">–</span> <span class="company svelte-xst17k">IBM</span> <span class="date svelte-xst17k">(2012 - 2018)</span> </h3> <p>Front end development for Watson Discovery tooling - a web app for ingesting and enriching documents for search applications
+            </p> <ul class=" svelte-14p8wvm"><li>Javascript</li><li>JRuby</li><li>React</li><li>Redux</li><li>Sass</li><li>Rails</li> </ul>  </section> </section> <section class="svelte-1l5ng8w"><h2 class="svelte-1l5ng8w">Education</h2> <h3 data-svelte-h="svelte-1qb5s5h">University of Pittsburgh — Information Science</h3> </section> <section class="svelte-1l5ng8w"><h2 class="svelte-1l5ng8w">Hobbies</h2> <ul class=" svelte-14p8wvm"><li><a href="https://www.youtube.com/watch?v=zJpvH-G_33s" class=" svelte-tjgg88" target="_blank" rel="noreferrer">Autocross (2022 SSCA SSC national champion)</a></li> <li data-svelte-h="svelte-nrggcz">Sim racing</li> <li data-svelte-h="svelte-1telmev">Climbing</li> <li data-svelte-h="svelte-1qaa23s">CNC woodworking</li> <li data-svelte-h="svelte-1xz63oo">Hydroponic gardening</li> </ul> </section> </div> 
+			
+			<script>
+				{
+					__sveltekit_19tsrpv = {
+						assets: "/mikeferchak.github.io",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.af6f0b2e.js"),
+						import("./_app/immutable/entry/app.4d4e91b4.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
